@@ -1,0 +1,55 @@
+#upper-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(30px, 5vw, 45px);
+    font-weight: 700;
+    color: rgb(255, 255, 83);
+    text-shadow: 
+        -.06em 0 .08em #000,
+        .06em 0 .08em #000,
+        0 .06em .08em #000,
+        0 -.06em .08em #000,
+        -.06em .06em .08em #000,
+        .06em .06em .08em #000,
+        -.06em -.06em .08em #000,
+        .06em -.06em .08em #000;
+}
+
+#panda-logo {
+    width: clamp(350px, 60vw, 800px);
+}
+
+#text {
+    margin: 20px 0 60px 0;
+}
+
+#start-btn {
+    font-size: clamp(20px, 10vw, 26px);
+    font-weight: 600;
+    color: rgb(53, 53, 53);
+    background-color: rgb(255, 255, 83);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 7px 30px;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.2s ease-out;
+    box-shadow: 0 0 10px black;
+}
+#start-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+    border: 1px solid rgb(255, 255, 83);
+}
+#start-btn:active {
+    transform: scale(0.9);
+}
