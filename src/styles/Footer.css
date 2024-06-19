@@ -1,0 +1,42 @@
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6vw;
+}
+
+#sound, #help {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgb(71, 71, 71);
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid white;
+    outline: none;
+}
+#sound:hover, #help:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+#sound:active, #help:active {
+    transform: scale(0.9);
+}
+
+#help {
+    padding: 20px;
+}
+
+#sound img {
+    width: 25px;
+    height: 25px;
+}
+
+#help img {
+    width: 15px;
+    height: 15px;
+}
+
+#video {
+    display: none;
+}
