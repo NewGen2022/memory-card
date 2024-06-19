@@ -1,4 +1,4 @@
-import './styles/startScreen.css';
+import './styles/StartScreen.css';
 import kungFuPandaLogo from './assets/panda-logo.png';
 
 const StartScreen = () => {
