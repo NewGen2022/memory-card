@@ -1,4 +1,3 @@
-import './styles/App.css';
 import StartScreen from './StartScreen';
 import Footer from '../src/footer/Footer';
 
