@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-const Message = ({ text, side }) => {
+const Message = ({ text, side, className }) => {
     return (
-        <div className={`popup-msg ${side}`}>
+        <div className={`popup-msg ${side} ${className}`}>
             <span>{ text }</span>
         </div>
     );
@@ -10,7 +10,8 @@ const Message = ({ text, side }) => {
 
 Message.propTypes = {
     text: PropTypes.string.isRequired,
-    side: PropTypes.string.isRequired,
+    side: PropTypes.string,
+    className: PropTypes.string.isRequired,
 };
 
 export default Message;
