@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 
 const Footer = () => {
     const [isSound, setIsSound] = useState(false);
-    const [isHelp, setIsHelp] = useState(true);
+    const [isShowHelp, setIsShowHelp] = useState(false);
     const [showMessage, setShowMessage] = useState(false);
 
     useEffect(() => {
@@ -26,28 +26,35 @@ const Footer = () => {
         setIsSound(prevState => !prevState);
     };
 
-    const handleHelp= () => {
-        setIsHelp(prevState => !prevState);
+    const handleShowHelp= () => {
+        setIsShowHelp(prevState => !prevState);
     };
 
     return (
         <div id="footer">
-            {showMessage && (
-                <Message text="Turn the sound up" side="left" />
-            )}
-
-            <button id="sound" onClick={ handleSound }>
-                <img src={ isSound ? soundIcon : noSoundIcon }/>
-            </button>
-
             {isSound && (
                 <video autoPlay loop id="video">
                     <source src='./kai-theme-music.mp4' type="video/mp4"></source>
                 </video>
             )}
 
-            <button id="help" onClick={ handleHelp }>
-                <img src={ isHelp ? questionIcon : closeIcon }/>
+            {showMessage && (
+                <Message text="Turn the sound up" side="left" className="sound-msg" />
+            )}
+
+            <button id="sound" onClick={ handleSound }>
+                <img src={ isSound ? soundIcon : noSoundIcon }/>
+            </button>
+
+            {isShowHelp && (
+                <div id="help-msgs">
+                    <Message text="Don't click on the same card twice!" className="help-msg"/>
+                    <Message text="Click on 'KUNG FU PANDA' logo to go to start screen" className="help-msg"/>
+                </div>
+            )}
+
+            <button id="help" onClick={ handleShowHelp }>
+                <img src={ !isShowHelp ? questionIcon : closeIcon }/>
             </button>
         </div>
     );
