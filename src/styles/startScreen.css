@@ -53,3 +53,9 @@
 #start-btn:active {
     transform: scale(0.9);
 }
+
+@media only screen and (max-width: 767px) {
+    #upper-part {
+        height: 87%;
+    }
+}
