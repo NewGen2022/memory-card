@@ -40,3 +40,42 @@
 #video {
     display: none;
 }
+
+.popup-msg {
+    position: absolute;
+    bottom: 5vh;
+    left: 17vw;
+    display: flex;
+    align-items: center;
+    background-color: rgb(71, 71, 71);
+    padding: 12px 15px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+.popup-msg.left::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 75%;
+    transform: translateY(-5%) rotate(-55deg);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgb(71, 71, 71);
+}
+
+.popup-msg span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .popup-msg {
+        position: absolute;
+        bottom: 15vh;
+        left: 3vw;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
