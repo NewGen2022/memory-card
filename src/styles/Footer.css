@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     margin: 0 6vw;
+    position: fixed;
+    width: 85%;
+    bottom: 3vh;
 }
 
 #sound, #help {
@@ -56,7 +59,7 @@
     white-space: wrap;
     box-shadow:  0px -2px 5px 2px rgba(255, 255, 255, 0.3);
     max-width: 420px;
-    margin: 0 10px;
+    margin-left: -70px;
 }
 .popup-msg.left::before {
     content: '';
@@ -87,12 +90,14 @@
     right: clamp(100px, 17vw, 150px);
     z-index: 10;
     text-align: center;
+    margin-right: -70px;
 }
 
 @media only screen and (max-width: 767px) {
     .popup-msg {
-        bottom: 15vh;
+        bottom: 10vh;
         left: 5vw;
+        margin-left: 0;
     }
 
     .popup-msg span {
@@ -103,5 +108,6 @@
         bottom: 15vh;
         right: 15vw;
         left: 15vw;
+        margin-right: 0;
     }
 }
