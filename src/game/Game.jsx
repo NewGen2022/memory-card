@@ -1,15 +1,31 @@
 import Info from './Info';
 import '../styles/Game.css';
 import { useState } from 'react';
+import Header from './Header';
+import PropTypes from 'prop-types';
 
-const Game = () => {
+const Game = ({ setShowMain }) => {
     const [closeInfo, setCloseInfo] = useState(false);
 
     return (
-        <div id="main-game">
-            {!closeInfo && <Info setCloseInfo={setCloseInfo} />}
-        </div>
+        <>
+
+            <Header setShowMain={setShowMain} setCloseInfo={setCloseInfo} />
+
+            <div id="main-game">
+                {!closeInfo && 
+                    <>
+                        <Info setCloseInfo={setCloseInfo} />
+                        <div id="overlay"></div>    
+                    </>
+                }
+            </div>
+        </>
     );
+};
+
+Game.propTypes = {
+    setShowMain: PropTypes.func.isRequired,
 };
 
 export default Game;
