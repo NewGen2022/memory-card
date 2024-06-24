@@ -19,8 +19,10 @@
     background-color: rgba(44, 44, 44, 0.649);
     padding: 40px 50px;
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.716);
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+    z-index: 1000;
 }
 
 #info span {
@@ -44,10 +46,69 @@
     transform: scale(1);
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#header-game {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: fixed;
+    top: 3vh;
+    margin: 0 6vw;
+    gap: 10px;
+}
+
+#kung-fu-panda-logo-back {
+    width: 10%;
+    cursor: pointer;
+}
+#kung-fu-panda-logo-back img:hover {
+    transform: scale(1.1);
+}
+#kung-fu-panda-logo-back img {
+    width: 200px;
+}
+
+#info-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgb(71, 71, 71);
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: 1px solid white;
+    outline: none;
+}
+#info-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px white;
+}
+#info-btn:active, #kung-fu-panda-logo-back:active {
+    transform: scale(0.9);
+}
+#info-btn img {
+    width: 15px;
+}
+
 @media only screen and (max-width: 767px) {
     #info {
         width: 80%;
         font-size: 16px;
         width: clamp(40%);
+    }
+
+    #kung-fu-panda-logo-back img {
+        width: 150px;
     }
 }
