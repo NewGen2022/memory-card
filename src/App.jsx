@@ -1,10 +1,18 @@
 import StartScreen from './StartScreen';
 import Footer from '../src/footer/Footer';
+import Game from './game/Game';
+
+import { useState } from 'react';
 
 function App() {
+    const [showMain, setShowMain] = useState(false);
+
     return (
         <>
-            <StartScreen />
+            {!showMain ? 
+                <StartScreen setShowMain={setShowMain} /> :
+                <Game />
+            }
             <Footer />
         </>
     );
