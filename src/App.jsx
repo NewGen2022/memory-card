@@ -9,9 +9,9 @@ function App() {
 
     return (
         <>
-            {!showMain ? 
+            {!showMain ?
                 <StartScreen setShowMain={setShowMain} /> :
-                <Game />
+                <Game setShowMain={setShowMain} />
             }
             <Footer />
         </>
