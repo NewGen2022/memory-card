@@ -1,7 +1,13 @@
 import './styles/StartScreen.css';
 import kungFuPandaLogo from './assets/panda-logo.png';
+import PropTypes from 'prop-types';
 
-const StartScreen = () => {
+const StartScreen = ({ setShowMain }) => {
+
+    const handleStartBtnPress = () => {
+        setShowMain(true);
+    };
+
     return (
         <>
             <div id="upper-part">
@@ -10,10 +16,14 @@ const StartScreen = () => {
                     <span id="text">Memory Game</span>
                 </div>
 
-                <button id="start-btn">Start</button>
+                <button id="start-btn" onClick={handleStartBtnPress}>Start</button>
             </div>
         </>
     );
+};
+
+StartScreen.propTypes = {
+    setShowMain: PropTypes.func.isRequired,
 };
 
 export default StartScreen;
