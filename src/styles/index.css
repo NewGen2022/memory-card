@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url('./panda-bg.jpg');
+    background-image: url('../../public/panda-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
