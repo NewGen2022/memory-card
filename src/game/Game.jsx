@@ -1,15 +1,25 @@
-import Info from './Info';
-import '../styles/Game.css';
 import { useState } from 'react';
-import Header from './Header';
 import PropTypes from 'prop-types';
+import '../styles/Game.css';
+import '../styles/Levels.css';
+import Info from './Info';
+import Header from './Header';
+import Easy from './Easy';
 
 const Game = ({ setShowMain }) => {
     const [closeInfo, setCloseInfo] = useState(false);
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const handleClick = () => {
+        setIsFlipped(prevState => !prevState);
+
+        setTimeout(() => {
+            setIsFlipped(false);
+        }, 1000);
+    };
 
     return (
         <>
-
             <Header setShowMain={setShowMain} setCloseInfo={setCloseInfo} />
 
             <div id="main-game">
@@ -19,6 +29,8 @@ const Game = ({ setShowMain }) => {
                         <div id="overlay"></div>    
                     </>
                 }
+
+                <Easy handleClick={handleClick} isFlipped={isFlipped} />
             </div>
         </>
     );
