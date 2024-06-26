@@ -43,7 +43,7 @@ const Footer = () => {
             )}
 
             <button id="sound" onClick={ handleSound }>
-                <img src={ isSound ? soundIcon : noSoundIcon }/>
+                <img src={ isSound ? soundIcon : noSoundIcon } alt="sound on/off" />
             </button>
 
             {isShowHelp && (
@@ -54,7 +54,7 @@ const Footer = () => {
             )}
 
             <button id="help" onClick={ handleShowHelp }>
-                <img src={ !isShowHelp ? questionIcon : closeIcon }/>
+                <img src={ !isShowHelp ? questionIcon : closeIcon } alt="question mark" />
             </button>
         </div>
     );
