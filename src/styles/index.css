@@ -35,3 +35,14 @@ body::before {
 button {
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 930px) {
+    body {
+        background-repeat: repeat;
+    }
+
+    body::before {
+        height: 205%;
+    }
+}
