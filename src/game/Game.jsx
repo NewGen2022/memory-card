@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Game.css';
-import '../styles/Levels.css';
+import '../styles/Level.css';
 import Info from './Info';
 import Header from './Header';
-import Easy from './Easy';
+import Level from './Level';
 
 const Game = ({ setShowMain }) => {
     const [closeInfo, setCloseInfo] = useState(false);
@@ -30,7 +30,11 @@ const Game = ({ setShowMain }) => {
                     </>
                 }
 
-                <Easy handleClick={handleClick} isFlipped={isFlipped} />
+                <div>Level: Easy</div>
+                <div>Score: 0</div>
+                <div>Best Score: 0</div>
+
+                <Level handleClick={handleClick} isFlipped={isFlipped} />
             </div>
         </>
     );
