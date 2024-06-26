@@ -2,7 +2,6 @@ import kungFuPandaLogo from '../assets/panda-logo.png';
 import infoLogo from '../assets/info.png';
 import PropTypes from 'prop-types';
 
-
 const Header = ({ setShowMain, setCloseInfo }) => {
 
     const handleGoToStart = () => {
@@ -16,10 +15,10 @@ const Header = ({ setShowMain, setCloseInfo }) => {
     return (
         <div id="header-game">
             <div id="kung-fu-panda-logo-back" onClick={handleGoToStart}>
-                <img src={kungFuPandaLogo}/>
+                <img src={kungFuPandaLogo} alt="kung fu panda logo" />
             </div>
             <button id="info-btn" onClick={handleShowInfo}>
-                <img src={infoLogo}/>
+                <img src={infoLogo} alt="info" />
             </button>
         </div>
     );
