@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90%;
+    min-height: 80%;
 }
 
 #info {
@@ -62,7 +62,7 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    position: fixed;
+    position: relative;
     top: 3vh;
     margin: 0 6vw;
     gap: 10px;
@@ -101,7 +101,7 @@
     width: 15px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 805px) {
     #info {
         width: 80%;
         font-size: 16px;
