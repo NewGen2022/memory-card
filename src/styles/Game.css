@@ -26,6 +26,12 @@
     z-index: 1000;
 }
 
+#info .help-info {
+    font-weight: 900;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #info span {
     color: rgb(0, 255, 0);
     font-weight: 600;
