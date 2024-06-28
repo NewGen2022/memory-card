@@ -3,7 +3,7 @@
 <h2 align="center"><a href="https://newgen2022.github.io/memory-card/">App online</a></h2>
 
 <p align="center">
-  <img src="" alt="Game Preview">
+  <img src="https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_3.jpg" alt="Game Preview">
 </p>
 
 # Technologies used
@@ -20,6 +20,11 @@
 
 
 # App preview
-![]()
+![](https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_1.jpg)
+![](https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_2.jpg)
+![](https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_3.jpg)
+![](https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_4.jpg)
+![](https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_5.jpg)
+![](https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_6.jpg)
 
 **This site was built using [GitHub Pages](https://pages.github.com/).**
