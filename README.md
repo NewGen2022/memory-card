@@ -1,6 +1,6 @@
-<h1 align="center">Memory Card Game</h1>
+<h1 align="center">Memory Card</h1>
 <p align="center"> <strong><i>This app build as a part of Odin Project Project Curriculum to practice React.</strong></i> </p>
-<h2 align="center"><a href="https://newgen2022.github.io/memory-card/">App online</a></h2>
+<h2 align="center"><a href="https://newgen2022.github.io/memory-card/">Game online</a></h2>
 
 <p align="center">
   <img src="https://github.com/NewGen2022/memory-card/blob/main/app_preview/photo_3.jpg" alt="Game Preview">
